@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c238bcbf-fb43-46b3-80e4-10f51ffed6fe" name="Changes" comment="Almost ended Quiz2" />
+    <list default="true" id="c238bcbf-fb43-46b3-80e4-10f51ffed6fe" name="Changes" comment="Almost ended Quiz2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebFormsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebFormsTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,22 +32,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.WebFormsTest.waitImplicitly">
+}</component>
+  <component name="RunManager" selected="TestNG.WebFormsTest.selectFromDropDown">
     <configuration name="WebFormsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Quiz2_DavidLepsaia" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="WebFormsTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebFormsTest.TestProgressBar" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Quiz2_DavidLepsaia" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WebFormsTest" />
+      <option name="METHOD_NAME" value="TestProgressBar" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -89,9 +104,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.WebFormsTest.selectFromDropDown" />
+        <item itemvalue="TestNG.WebFormsTest.TestProgressBar" />
         <item itemvalue="TestNG.WebFormsTest.waitImplicitly" />
         <item itemvalue="TestNG.WebFormsTest.TestSelectedAndDisabled" />
-        <item itemvalue="TestNG.WebFormsTest.selectFromDropDown" />
         <item itemvalue="TestNG.WebFormsTest" />
       </list>
     </recent_temporary>
@@ -112,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664929103268</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Almost ended Quiz2">
+      <created>1664929129264</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664929129264</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

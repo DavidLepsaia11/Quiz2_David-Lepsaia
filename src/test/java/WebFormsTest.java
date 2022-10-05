@@ -4,7 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -30,7 +32,6 @@ public class WebFormsTest {
         //  Choose any (not default) programming language from dropdown and ensure that it was selected
         Select dropdown1 = new Select( driver.findElement(By.cssSelector("select[id='dropdowm-menu-1']")));
         dropdown1.selectByVisibleText("C#");
-        Thread.sleep(1000);
 
         List<WebElement> selectedOptions =  dropdown1.getAllSelectedOptions();
         for (WebElement selectedOption : selectedOptions) {
@@ -95,12 +96,18 @@ public class WebFormsTest {
         driver.get(" https://demoqa.com/progress-bar");
 
         //  Click to 'Start' button
-        WebElement button = driver.findElement(By.xpath("//button[@type='button' and contains(text(),'Start')]"));
-        button.click();
+        WebElement startButton = driver.findElement(By.xpath("//button[@type='button' and contains(text(),'Start')]"));
+        WebElement progressBar = driver.findElement(By.xpath("//div[@role='progressbar']"));
 
+        startButton.click();
+
+        WebDriverWait wait = new WebDriverWait(driver,5,200);
+        boolean is50 = wait.until(ExpectedConditions.attributeToBe(progressBar,"aria-valuenow","50"));
+        if (is50)
+        {
+            System.out.println("50%");
+        }
     }
-
-
     @AfterMethod
     public void tearDown() {
         driver.close();
